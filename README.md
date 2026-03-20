@@ -84,4 +84,4 @@ Este projeto é licenciado sob a **GNU General Public License v3.0** — veja o 
 
 ## Autor
 
-**Vinicius Peretti** — [Peretti Assessoria e Sistemas Ltda.](https://github.com/vperetti)
+**Vinicius Peretti** — [github.com/vperetti](https://github.com/vperetti)
