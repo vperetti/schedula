@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.Acompanhamento" table="ACOMPANHAMENTO">
+    <id column="ID" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <version column="VERSION" name="version" type="long"/>
+    <property column="HISTORICO" index="HISTORICO" length="100" name="historico" type="string"/>
+    <property column="DATACADASTRO" index="DATACADASTRO" name="dataCadastro"/>
+    <property column="DATAPROV" index="DATAPROV" name="dataProximaProvidencia"/>
+    <property column="BAIXA" name="baixa" type="boolean"/>
+    <property column="DATABAIXA" name="dataBaixa"/>
+    <property column="PARCELAVALOR" name="parcelaValor" type="double"/>
+    <property column="PARCELA" length="10" name="parcela" type="string"/>
+    <property column="OBSERVACAO" name="observacao" type="text"/>
+    <many-to-one class="br.com.perettis.schedula.entity.Processo" column="PROCESSO" name="processo"/>
+    <many-to-one class="br.com.perettis.schedula.entity.AcompanhamentoTipo" lazy="false" column="ACOMPANHAMENTOTIPO" name="acompanhamentoTipo"/>
+    <many-to-one class="br.com.perettis.schedula.entity.AudienciaTipo" lazy="false" column="AUDIENCIATIPO" name="audienciaTipo"/>
+    <set cascade="all-delete-orphan" inverse="true" lazy="false" name="acordoParcelas" order-by="VENCIMENTO">
+      <key column="ACOMPANHAMENTO"/>
+      <one-to-many class="br.com.perettis.schedula.entity.AcordoParcela"/>
+    </set>
+  </class>
+</hibernate-mapping>

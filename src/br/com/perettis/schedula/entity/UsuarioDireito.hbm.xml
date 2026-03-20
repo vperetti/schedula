@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.UsuarioDireito" table="USUARIODIREITO">
+    <id column="ID" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <many-to-one class="br.com.perettis.schedula.entity.Usuario" column="USUARIO" name="usuario"/>
+    <many-to-one class="br.com.perettis.schedula.entity.SchedulaRotina" column="ROTINA" name="rotina"/>
+  </class>
+</hibernate-mapping>

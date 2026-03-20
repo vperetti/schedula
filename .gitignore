@@ -1,0 +1,21 @@
+# Pasta de backups dos originais antes da sanitização
+bkps/
+
+# Arquivos de configuração com credenciais reais
+*.preenchida
+*-preenchida.xml
+hibernate.cfg.xml.preenchida
+env/CONF/SchedulaConfig-preenchida.xml
+
+# Backups de editor
+*~
+
+# Artefatos de build (já geridos pelo Ant)
+build/
+
+# NetBeans IDE privado
+nbproject/private/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

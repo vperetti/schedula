@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.AcordoParcela" table="ACORDOPARCELA">
+    <id column="ID" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <many-to-one class="br.com.perettis.schedula.entity.Acompanhamento" column="ACOMPANHAMENTO" name="acompanhamento"/>
+    <property column="VENCIMENTO" name="vencimento"/>
+    <property column="PARCELAVALOR" name="parcelaValor" type="double"/>
+    <property column="PARCELA" length="10" name="parcela" type="string"/>
+  </class>
+</hibernate-mapping>

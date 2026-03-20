@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.AudienciaTipo" table="AUDIENCIATIPO">
+    <id column="ID" name="id" type="int">
+      <generator class="native"/>
+    </id>
+    <property column="DESCRICAO" index="DESCRICAO" length="50" name="descricao" type="string" unique="true"/>
+    <property column="DESABILITADO" name="desabilitado" type="boolean"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.Pessoa" table="PESSOA">
+    <id column="ID" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <discriminator column="TIPOPESSOA" length="2" type="string"/>
+    <version unsaved-value="null" column="VERSION" name="version" type="long"/>
+    <property column="NOME" index="NOME" length="100" name="nome" type="string"/>
+    <property column="ENDERECO" length="255" name="endereco" type="string"/>
+    <property column="BAIRRO" length="255" name="bairro" type="string"/>
+    <property column="CEP" length="10" name="cep" type="string"/>
+    <property column="CIDADE" length="100" name="cidade" type="string"/>
+    <many-to-one class="br.com.perettis.schedula.entity.Uf" column="UF" name="uf"/>
+    <property column="FONE1" length="20" name="fone1" type="string"/>
+    <property column="FONE2" length="20" name="fone2" type="string"/>
+    <property column="FONE3" length="20" name="fone3" type="string"/>
+    <property column="CONTATO1" length="20" name="contato1" type="string"/>
+    <property column="CONTATO2" length="20" name="contato2" type="string"/>
+    <property column="CONTATO3" length="20" name="contato3" type="string"/>
+    <property column="OBSERVACAO" name="observacao" type="text"/>
+    <property column="EMAIL" length="255" name="email" type="string"/>
+    <property column="CODREQUERENTE" name="codRequerente" type="long"/>
+    <property column="CODREQUERIDO" name="codRequerido" type="long"/>
+    <property column="PAGATAXA" name="pagaTaxa" type="boolean"/>
+    <property column="VALORTAXA" name="valorTaxa" type="double"/>
+    <subclass discriminator-value="F" lazy="false" name="br.com.perettis.schedula.entity.PessoaFisica">
+      <property column="CPF" index="CPF" length="11" name="cpf" type="string" unique="true"/>
+      <many-to-one class="br.com.perettis.schedula.entity.EstadoCivil" column="ESTADOCIVIL" lazy="false" name="estadoCivil"/>
+      <property column="PROFISSAO" length="255" name="profissao" type="string"/>
+      <property column="DATANASCIMENTO" name="dataNascimento"/>
+      <property column="SEXO" name="sexo" type="boolean"/>
+      <property column="RG" length="100" name="rg" type="string" unique-key="RG"/>
+      <property column="RGORGAOEXPEDITOR" length="10" name="rgOrgaoExpeditor" type="string" unique-key="RG"/>
+      <property column="CARTEIRATRABALHO" length="20" name="carteiraTrabalho" type="string" unique-key="CARTRABSER"/>
+      <property column="CARTEIRATRABALHOSERIE" length="10" name="carteiraTrabalhoSerie" type="string" unique-key="CARTRABSER"/>
+      <property column="NOMEMAE" length="100" name="nomeMae" type="string"/>
+      <property column="NOMEPAI" length="100" name="nomePai" type="string"/>
+      <property column="NACIONALIDADE" length="50" name="nacionalidade" type="string"/>
+      <property column="NATURALIDADE" length="50" name="naturalidade" type="string"/>
+    </subclass>
+    <subclass discriminator-value="J" lazy="false" name="br.com.perettis.schedula.entity.PessoaJuridica">
+      <property column="CNPJ" index="CNPJ" length="14" name="cnpj" type="string" unique="true"/>
+      <property column="INSCESTADUAL" length="30" name="inscEstadual" type="string"/>
+      <property column="INSCMUNICIPAL" length="30" name="inscMunicipal" type="string"/>
+      <property column="SOCIOS" name="socios" type="text"/>
+      <property column="CODIGOEMPRESA" length="20" name="codigoEmpresa" type="string"/>
+    </subclass>
+  </class>
+</hibernate-mapping>

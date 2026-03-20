@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<SchedulaConfig>
+  <Config id="1">
+    <databaseDialect>org.hibernate.dialect.MySQL5InnoDBDialect</databaseDialect>
+    <!-- Substitua <hostexemplo> pelo endereço e porta do seu servidor MySQL (ex: localhost:3306) -->
+    <databaseConection>jdbc:mysql://<hostexemplo>/schedula?autoReconnect=true</databaseConection>
+    <databasePassword>(PREENCHER PELO SISTEMA)</databasePassword>
+    <databaseUsername>schedula</databaseUsername>
+    <databaseDriver>com.mysql.jdbc.Driver</databaseDriver>
+  </Config>
+</SchedulaConfig>
+

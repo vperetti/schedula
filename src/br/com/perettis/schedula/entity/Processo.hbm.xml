@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.Processo" table="PROCESSO">
+    <id column="ID" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <version column="VERSION" name="version" type="long"/>
+    <property column="NUMEROPROCESSO" index="NUMEROPROCESSO" length="20" name="numeroProcesso" type="string" unique-key="PROCESSOVARA"/>
+    <many-to-one class="br.com.perettis.schedula.entity.Vara" column="VARA" name="vara" unique-key="PROCESSOVARA"/>
+    <property column="ARMARIO" length="10" name="armario" type="string"/>
+    <property column="GAVETA" length="10" name="gaveta" type="string"/>
+    <property column="GEEI" name="geei" type="boolean"/>
+    <property column="TRT" name="trt" type="boolean"/>
+    <property column="AUTOR" name="autor" type="boolean"/>
+    <property column="RECURSO" index="RECURSO" length="20" name="recurso" type="string"/>
+    <property column="ADVOGADOCONTRARIA" index="ADVOGADOCONTRARIA" length="100" name="advogadoContraria" type="string"/>
+    <property column="OBSERVACAO" name="observacao" type="text"/>
+    <property column="DETALHES" name="detalhes" type="text"/>
+    <many-to-one class="br.com.perettis.schedula.entity.Pessoa" column="RECLAMANTE" lazy="false" name="reclamante"/>
+    <many-to-one class="br.com.perettis.schedula.entity.Pessoa" column="RECLAMADO" lazy="false" name="reclamado"/>
+    <many-to-one class="br.com.perettis.schedula.entity.Advogado" column="ADVOGADO" name="advogado"/>
+    <set cascade="delete" inverse="false" lazy="false" name="acompanhamentos" order-by="DATAPROV desc">
+      <key column="PROCESSO"/>
+      <one-to-many class="br.com.perettis.schedula.entity.Acompanhamento"/>
+    </set>
+    <property column="PAGATAXAABERTURA" name="pagaTaxaAbertura" type="boolean"/>
+    <property column="VALORTAXAABERTURA" name="valorTaxaAbertura" type="double"/>
+  </class>
+</hibernate-mapping>

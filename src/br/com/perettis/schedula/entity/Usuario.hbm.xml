@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="true" dynamic-update="true" name="br.com.perettis.schedula.entity.Usuario" table="USUARIO">
+    <id column="ID" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <version column="VERSION" name="version" type="long"/>
+    <property column="APELIDO" index="APELIDO" length="30" name="apelido" type="string" unique="true"/>
+    <property column="SENHA" name="senha" type="text"/>
+    <property column="NOME" index="NOME" length="255" name="nome" type="string"/>
+    <property column="EMAIL" index="EMAIL" length="255" name="email" type="string"/>
+    <property column="ADMINISTRADOR" name="administrador" type="boolean"/>
+    <property column="DESABILITADO" name="desabilitado" type="boolean"/>
+    <set cascade="all-delete-orphan" inverse="true" lazy="false" name="direitos">
+      <key column="USUARIO"/>
+      <one-to-many class="br.com.perettis.schedula.entity.UsuarioDireito"/>
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hbernate/Hibernte Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <subclass discriminator-value="F" dynamic-insert="true" dynamic-update="true" extends="br.com.perettis.schedula.entity.PessoaFisica" name="br.com.perettis.schedula.entity.Advogado">
+    <join table="ADVOGADO">
+      <key column="IDADVOGADO"/>
+      <property column="OAB" length="100" name="oab" type="string" unique-key="OABUF"/>
+      <many-to-one class="br.com.perettis.schedula.entity.Uf" column="OABUF" name="oabUf" unique-key="OABUF"/>
+      <property column="DESABILITADO" name="desabilitado" type="boolean"/>
+      <property column="CODADVOGADO" name="codAdvogado" type="long"/>
+    </join>
+  </subclass>
+</hibernate-mapping>
