@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350">
+  <style>
+    .label { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .title { font-family: Arial, sans-serif; font-size: 16px; fill: #333; font-weight: bold; }
+    .field { fill: #fff; stroke: #999; stroke-width: 1; rx: 2; }
+    .btn { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .button { fill: #e8e8e8; stroke: #999; stroke-width: 1; rx: 3; }
+    .tab-active { fill: #f0f0f0; stroke: #999; stroke-width: 1; }
+    .tab-inactive { fill: #d8d8d8; stroke: #999; stroke-width: 1; }
+  </style>
+  <!-- Window frame -->
+  <rect width="500" height="350" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="500" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="500" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Configuracao do Sistema</text>
+  <circle cx="460" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="476" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="444" cy="14" r="6" fill="#f39c12"/>
+
+  <!-- Title -->
+  <text x="250" y="58" text-anchor="middle" class="title">Configuracao do Sistema</text>
+
+  <!-- Tabs -->
+  <rect x="15" y="75" width="110" height="22" class="tab-active"/>
+  <text x="70" y="90" text-anchor="middle" class="btn" font-weight="bold">Banco de Dados</text>
+  <rect x="125" y="75" width="120" height="22" class="tab-inactive"/>
+  <text x="185" y="90" text-anchor="middle" class="btn">Dados da Empresa</text>
+
+  <!-- Tab content -->
+  <rect x="15" y="95" width="470" height="200" fill="#f0f0f0" stroke="#999"/>
+
+  <!-- Fields -->
+  <text x="85" y="125" text-anchor="end" class="label">Conexao:</text>
+  <rect x="92" y="112" width="370" height="20" class="field"/>
+  <text x="102" y="126" font-family="Arial, sans-serif" font-size="10" fill="#888">jdbc:mysql://localhost:3306/schedula</text>
+
+  <text x="85" y="155" text-anchor="end" class="label">Dialeto:</text>
+  <rect x="92" y="142" width="370" height="20" class="field"/>
+  <text x="102" y="156" font-family="Arial, sans-serif" font-size="10" fill="#888">org.hibernate.dialect.MySQL5InnoDBDialect</text>
+
+  <text x="85" y="185" text-anchor="end" class="label">Driver:</text>
+  <rect x="92" y="172" width="370" height="20" class="field"/>
+  <text x="102" y="186" font-family="Arial, sans-serif" font-size="10" fill="#888">com.mysql.jdbc.Driver</text>
+
+  <text x="85" y="215" text-anchor="end" class="label">Usuario:</text>
+  <rect x="92" y="202" width="180" height="20" class="field"/>
+
+  <text x="85" y="245" text-anchor="end" class="label">Senha:</text>
+  <rect x="92" y="232" width="180" height="20" class="field"/>
+  <text x="102" y="246" font-family="Arial, sans-serif" font-size="12" fill="#333">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</text>
+
+  <!-- Bottom buttons -->
+  <rect x="160" y="310" width="80" height="26" class="button" fill="#d0d8e8"/>
+  <text x="200" y="327" text-anchor="middle" class="btn">Salvar</text>
+  <rect x="250" y="310" width="80" height="26" class="button"/>
+  <text x="290" y="327" text-anchor="middle" class="btn">Sair</text>
+</svg>

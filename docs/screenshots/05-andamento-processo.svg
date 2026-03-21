@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="580" viewBox="0 0 720 580">
+  <style>
+    .label { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .field { fill: #fff; stroke: #999; stroke-width: 1; rx: 2; }
+    .btn { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .button { fill: #e8e8e8; stroke: #999; stroke-width: 1; rx: 3; }
+    .tab-active { fill: #f0f0f0; stroke: #999; stroke-width: 1; }
+    .tab-inactive { fill: #d8d8d8; stroke: #999; stroke-width: 1; }
+    .group { fill: none; stroke: #bbb; stroke-width: 1; rx: 4; }
+    .group-title { font-family: Arial, sans-serif; font-size: 11px; fill: #666; font-weight: bold; }
+    .table-header { fill: #d0d8e8; stroke: #bbb; stroke-width: 0.5; }
+    .table-row { fill: #fff; stroke: #ddd; stroke-width: 0.5; }
+    .table-row-alt { fill: #f5f8fc; stroke: #ddd; stroke-width: 0.5; }
+    .th { font-family: Arial, sans-serif; font-size: 10px; fill: #333; font-weight: bold; }
+    .td { font-family: Arial, sans-serif; font-size: 10px; fill: #444; }
+  </style>
+  <!-- Window frame -->
+  <rect width="720" height="580" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="720" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="720" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Andamento de Processos</text>
+  <circle cx="680" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="696" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="664" cy="14" r="6" fill="#f39c12"/>
+
+  <!-- Top buttons -->
+  <text x="55" y="52" text-anchor="end" class="label">ID:</text>
+  <rect x="62" y="40" width="82" height="20" class="field"/>
+  <rect x="150" y="40" width="55" height="20" class="button"/>
+  <text x="177" y="53" text-anchor="middle" class="btn">Novo</text>
+  <rect x="210" y="40" width="75" height="20" class="button"/>
+  <text x="247" y="53" text-anchor="middle" class="btn">Pesquisar</text>
+  <rect x="540" y="40" width="100" height="20" class="button"/>
+  <text x="590" y="53" text-anchor="middle" class="btn">Mudar Processo</text>
+
+  <!-- Tabs -->
+  <rect x="10" y="70" width="120" height="22" class="tab-active"/>
+  <text x="70" y="85" text-anchor="middle" class="btn" font-weight="bold">Dados do Processo</text>
+  <rect x="130" y="70" width="100" height="22" class="tab-inactive"/>
+  <text x="180" y="85" text-anchor="middle" class="btn">Andamentos</text>
+  <rect x="230" y="70" width="140" height="22" class="tab-inactive"/>
+  <text x="300" y="85" text-anchor="middle" class="btn">Dados Acompanhamento</text>
+  <rect x="370" y="70" width="140" height="22" class="tab-inactive"/>
+  <text x="440" y="85" text-anchor="middle" class="btn">Acordo Parcelamento</text>
+
+  <!-- Tab content -->
+  <rect x="10" y="90" width="700" height="420" fill="#f0f0f0" stroke="#999"/>
+
+  <!-- Dados do Processo tab content -->
+  <text x="30" y="118" class="label">Num. Processo:</text>
+  <rect x="120" y="105" width="170" height="20" class="field" fill="#f5f5f5"/>
+  <text x="310" y="118" class="label">Vara:</text>
+  <rect x="340" y="105" width="200" height="20" class="field" fill="#f5f5f5"/>
+
+  <text x="30" y="148" class="label">Advogado:</text>
+  <rect x="120" y="135" width="250" height="20" class="field" fill="#f5f5f5"/>
+  <text x="390" y="148" class="label">Posicao:</text>
+  <rect x="445" y="135" width="80" height="20" class="field" fill="#f5f5f5"/>
+  <text x="460" y="149" class="td">Autor</text>
+
+  <text x="30" y="178" class="label">Cliente:</text>
+  <rect x="120" y="165" width="250" height="20" class="field" fill="#f5f5f5"/>
+
+  <!-- Parte Contraria -->
+  <rect x="20" y="195" width="680" height="55" class="group"/>
+  <text x="35" y="210" class="group-title">Parte Contraria</text>
+  <rect x="35" y="218" width="250" height="20" class="field" fill="#f5f5f5"/>
+
+  <!-- Andamentos table (showing as if second tab selected) -->
+  <text x="30" y="275" class="group-title">Andamentos do Processo:</text>
+  <!-- Table header -->
+  <rect x="20" y="282" width="680" height="20" class="table-header"/>
+  <text x="30" y="296" class="th">Data Cadastro</text>
+  <text x="130" y="296" class="th">Data Providencia</text>
+  <text x="260" y="296" class="th">Hora</text>
+  <text x="310" y="296" class="th">Tipo Andamento</text>
+  <text x="440" y="296" class="th">Tipo Audiencia</text>
+  <text x="580" y="296" class="th">Baixa</text>
+  <text x="640" y="296" class="th">Data Baixa</text>
+  <!-- Table rows -->
+  <rect x="20" y="302" width="680" height="18" class="table-row"/>
+  <text x="30" y="314" class="td">15/03/2024</text>
+  <text x="130" y="314" class="td">20/03/2024</text>
+  <text x="260" y="314" class="td">14:00</text>
+  <text x="310" y="314" class="td">Audiencia</text>
+  <text x="440" y="314" class="td">Instrucao</text>
+  <text x="580" y="314" class="td">Nao</text>
+  <rect x="20" y="320" width="680" height="18" class="table-row-alt"/>
+  <text x="30" y="332" class="td">10/03/2024</text>
+  <text x="130" y="332" class="td">15/03/2024</text>
+  <text x="260" y="332" class="td">09:30</text>
+  <text x="310" y="332" class="td">Despacho</text>
+  <text x="440" y="332" class="td">-</text>
+  <text x="580" y="332" class="td">Sim</text>
+  <text x="640" y="332" class="td">15/03/2024</text>
+  <rect x="20" y="338" width="680" height="18" class="table-row"/>
+  <text x="30" y="350" class="td">01/03/2024</text>
+  <text x="130" y="350" class="td">10/03/2024</text>
+  <text x="260" y="350" class="td">10:00</text>
+  <text x="310" y="350" class="td">Audiencia</text>
+  <text x="440" y="350" class="td">Conciliacao</text>
+  <text x="580" y="350" class="td">Sim</text>
+  <text x="640" y="350" class="td">10/03/2024</text>
+
+  <!-- Historico/Observacao -->
+  <rect x="20" y="370" width="680" height="60" class="group"/>
+  <text x="35" y="385" class="group-title">Historico</text>
+  <rect x="30" y="392" width="660" height="28" class="field"/>
+
+  <!-- Observacao -->
+  <rect x="20" y="440" width="680" height="55" class="group"/>
+  <text x="35" y="455" class="group-title">Observacao</text>
+  <rect x="30" y="462" width="660" height="24" class="field"/>
+
+  <!-- Bottom buttons -->
+  <rect x="230" y="520" width="75" height="26" class="button" fill="#d0d8e8"/>
+  <text x="267" y="537" text-anchor="middle" class="btn">Salvar</text>
+  <rect x="310" y="520" width="75" height="26" class="button"/>
+  <text x="347" y="537" text-anchor="middle" class="btn">Cancelar</text>
+  <rect x="390" y="520" width="75" height="26" class="button"/>
+  <text x="427" y="537" text-anchor="middle" class="btn">Excluir</text>
+</svg>

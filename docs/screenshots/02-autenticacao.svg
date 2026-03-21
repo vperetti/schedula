@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <style>
+    .label { font-family: Arial, sans-serif; font-size: 13px; fill: #333; }
+    .title { font-family: Arial, sans-serif; font-size: 20px; fill: #333; font-weight: bold; }
+    .btn { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+    .field { fill: #fff; stroke: #999; stroke-width: 1; }
+    .button { fill: #e8e8e8; stroke: #999; stroke-width: 1; rx: 3; }
+  </style>
+  <!-- Window frame -->
+  <rect width="480" height="320" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="480" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="480" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Autenticacao</text>
+  <!-- Window controls -->
+  <circle cx="440" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="456" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="424" cy="14" r="6" fill="#f39c12"/>
+  <!-- Icon placeholder -->
+  <rect x="175" y="45" width="130" height="40" fill="none"/>
+  <circle cx="210" cy="60" r="15" fill="none" stroke="#CC0000" stroke-width="2"/>
+  <line x1="210" y1="60" x2="210" y2="50" stroke="#CC0000" stroke-width="2"/>
+  <line x1="210" y1="60" x2="220" y2="60" stroke="#CC0000" stroke-width="1.5"/>
+  <!-- Title -->
+  <text x="240" y="100" text-anchor="middle" class="title">Autenticacao de Usuario</text>
+  <!-- Username field -->
+  <text x="70" y="155" text-anchor="end" class="label">Nome de Usuario:</text>
+  <rect x="80" y="140" width="220" height="24" class="field" rx="2"/>
+  <!-- Password field -->
+  <text x="70" y="190" text-anchor="end" class="label">Senha:</text>
+  <rect x="80" y="175" width="220" height="24" class="field" rx="2"/>
+  <text x="100" y="191" font-family="Arial" font-size="14" fill="#333">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</text>
+  <!-- Buttons -->
+  <rect x="80" y="220" width="120" height="30" class="button"/>
+  <text x="140" y="240" text-anchor="middle" class="btn">Cancelar</text>
+  <rect x="210" y="220" width="120" height="30" class="button" fill="#d0d8e8"/>
+  <text x="270" y="240" text-anchor="middle" class="btn">Entrar</text>
+</svg>

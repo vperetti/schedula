@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FFA500"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="420" height="320" rx="4" fill="url(#bg)"/>
+  <!-- Logo area -->
+  <circle cx="210" cy="100" r="50" fill="none" stroke="#CC0000" stroke-width="3"/>
+  <!-- Clock hands -->
+  <line x1="210" y1="100" x2="210" y2="65" stroke="#CC0000" stroke-width="3" stroke-linecap="round"/>
+  <line x1="210" y1="100" x2="235" y2="100" stroke="#CC0000" stroke-width="2" stroke-linecap="round"/>
+  <!-- Balance/scales icon -->
+  <line x1="190" y1="155" x2="230" y2="155" stroke="#8B4513" stroke-width="2"/>
+  <line x1="210" y1="145" x2="210" y2="165" stroke="#8B4513" stroke-width="2"/>
+  <polygon points="185,155 195,155 190,165" fill="#8B4513"/>
+  <polygon points="225,155 235,155 230,165" fill="#8B4513"/>
+  <!-- Title -->
+  <text x="210" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">SCHEDULA</text>
+  <!-- Loading text -->
+  <text x="210" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-style="italic" fill="#555">iniciando...</text>
+  <!-- Peretti logo area -->
+  <text x="370" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#CC0000">Peretti</text>
+  <text x="370" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#666">Assessoria e Sistemas</text>
+  <!-- Copyright -->
+  <rect x="0" y="290" width="420" height="30" fill="rgba(0,0,0,0.15)"/>
+  <text x="210" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">copyright &#169; 2008 Peretti Assessoria e Sistemas Ltda. Todos os Direitos Reservados</text>
+</svg>

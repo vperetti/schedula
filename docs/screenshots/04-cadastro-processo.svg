@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+  <style>
+    .label { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .title { font-family: Arial, sans-serif; font-size: 14px; fill: #333; font-weight: bold; }
+    .field { fill: #fff; stroke: #999; stroke-width: 1; rx: 2; }
+    .btn { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .button { fill: #e8e8e8; stroke: #999; stroke-width: 1; rx: 3; }
+    .tab-active { fill: #f0f0f0; stroke: #999; stroke-width: 1; }
+    .tab-inactive { fill: #d8d8d8; stroke: #999; stroke-width: 1; }
+    .group { fill: none; stroke: #bbb; stroke-width: 1; rx: 4; }
+    .group-title { font-family: Arial, sans-serif; font-size: 11px; fill: #666; font-weight: bold; }
+    .radio { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+  </style>
+  <!-- Window frame -->
+  <rect width="720" height="620" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="720" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="720" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Dados de Processos</text>
+  <circle cx="680" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="696" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="664" cy="14" r="6" fill="#f39c12"/>
+
+  <!-- ID row -->
+  <text x="55" y="55" text-anchor="end" class="label">ID:</text>
+  <rect x="62" y="42" width="82" height="20" class="field"/>
+  <rect x="150" y="42" width="60" height="20" class="button"/>
+  <text x="180" y="56" text-anchor="middle" class="btn">Novo</text>
+  <rect x="215" y="42" width="75" height="20" class="button"/>
+  <text x="252" y="56" text-anchor="middle" class="btn">Pesquisar</text>
+
+  <!-- Numero Processo row -->
+  <text x="55" y="80" text-anchor="end" class="label">Num. Processo:</text>
+  <rect x="62" y="68" width="170" height="20" class="field"/>
+  <text x="250" y="80" class="label">Vara:</text>
+  <rect x="278" y="68" width="40" height="20" class="field"/>
+  <rect x="322" y="68" width="200" height="20" class="field" fill="#f5f5f5"/>
+  <rect x="526" y="68" width="70" height="20" class="button"/>
+  <text x="561" y="80" text-anchor="middle" class="btn">Pesq. Vara</text>
+
+  <!-- Tabs -->
+  <rect x="10" y="98" width="65" height="22" class="tab-active"/>
+  <text x="42" y="113" text-anchor="middle" class="btn" font-weight="bold">Dados</text>
+  <rect x="75" y="98" width="75" height="22" class="tab-inactive"/>
+  <text x="112" y="113" text-anchor="middle" class="btn">Detalhes</text>
+  <!-- Tab content area -->
+  <rect x="10" y="118" width="700" height="440" fill="#f0f0f0" stroke="#999"/>
+
+  <!-- Advogado -->
+  <text x="30" y="145" class="label">Advogado:</text>
+  <rect x="95" y="132" width="40" height="20" class="field"/>
+  <rect x="139" y="132" width="250" height="20" class="field" fill="#f5f5f5"/>
+  <rect x="393" y="132" width="85" height="20" class="button"/>
+  <text x="435" y="145" text-anchor="middle" class="btn">Pesq. Advogado</text>
+
+  <!-- Posicao -->
+  <text x="30" y="172" class="label">Posicao:</text>
+  <circle cx="100" cy="168" r="6" fill="white" stroke="#999"/>
+  <circle cx="100" cy="168" r="3" fill="#333"/>
+  <text x="112" y="172" class="radio">Autor</text>
+  <circle cx="165" cy="168" r="6" fill="white" stroke="#999"/>
+  <text x="177" y="172" class="radio">Reu</text>
+
+  <!-- Cliente group -->
+  <rect x="20" y="190" width="330" height="140" class="group"/>
+  <text x="35" y="205" class="group-title">Cliente</text>
+  <circle cx="40" cy="222" r="6" fill="white" stroke="#999"/>
+  <circle cx="40" cy="222" r="3" fill="#333"/>
+  <text x="52" y="226" class="radio">P.F.</text>
+  <circle cx="95" cy="222" r="6" fill="white" stroke="#999"/>
+  <text x="107" y="226" class="radio">P.J.</text>
+  <rect x="35" y="238" width="40" height="20" class="field"/>
+  <rect x="79" y="238" width="180" height="20" class="field" fill="#f5f5f5"/>
+  <rect x="35" y="268" width="100" height="22" class="button"/>
+  <text x="85" y="283" text-anchor="middle" class="btn">Pesquisar</text>
+  <rect x="140" y="268" width="100" height="22" class="button"/>
+  <text x="190" y="283" text-anchor="middle" class="btn">Cadastrar</text>
+
+  <!-- Parte Contraria group -->
+  <rect x="365" y="190" width="330" height="140" class="group"/>
+  <text x="380" y="205" class="group-title">Parte Contraria</text>
+  <circle cx="385" cy="222" r="6" fill="white" stroke="#999"/>
+  <circle cx="385" cy="222" r="3" fill="#333"/>
+  <text x="397" y="226" class="radio">P.F.</text>
+  <circle cx="440" cy="222" r="6" fill="white" stroke="#999"/>
+  <text x="452" y="226" class="radio">P.J.</text>
+  <rect x="380" y="238" width="40" height="20" class="field"/>
+  <rect x="424" y="238" width="180" height="20" class="field" fill="#f5f5f5"/>
+  <rect x="380" y="268" width="100" height="22" class="button"/>
+  <text x="430" y="283" text-anchor="middle" class="btn">Pesquisar</text>
+  <rect x="485" y="268" width="100" height="22" class="button"/>
+  <text x="535" y="283" text-anchor="middle" class="btn">Cadastrar</text>
+
+  <!-- Checkbox TRT -->
+  <rect x="30" y="345" width="14" height="14" fill="white" stroke="#999" rx="2"/>
+  <text x="50" y="357" class="label">TRT</text>
+
+  <!-- Observacao group -->
+  <rect x="20" y="375" width="680" height="100" class="group"/>
+  <text x="35" y="390" class="group-title">Observacao</text>
+  <rect x="30" y="398" width="660" height="65" class="field"/>
+
+  <!-- Bottom buttons -->
+  <rect x="230" y="565" width="75" height="26" class="button" fill="#d0d8e8"/>
+  <text x="267" y="582" text-anchor="middle" class="btn">Salvar</text>
+  <rect x="310" y="565" width="75" height="26" class="button"/>
+  <text x="347" y="582" text-anchor="middle" class="btn">Cancelar</text>
+  <rect x="390" y="565" width="75" height="26" class="button"/>
+  <text x="427" y="582" text-anchor="middle" class="btn">Excluir</text>
+</svg>

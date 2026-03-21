@@ -76,7 +76,31 @@ schedula/
 └── docs/                # Documentação técnica
 ```
 
-<!-- TODO: adicionar screenshots -->
+## Telas do sistema
+
+### Splash Screen
+![Splash Screen](docs/screenshots/01-splash.png)
+
+### Autenticação
+![Autenticação](docs/screenshots/02-autenticacao.png)
+
+### Tela Principal
+![Tela Principal](docs/screenshots/03-tela-principal.png)
+
+### Cadastro de Processos
+![Cadastro de Processos](docs/screenshots/04-cadastro-processo.png)
+
+### Andamento de Processos
+![Andamento de Processos](docs/screenshots/05-andamento-processo.png)
+
+### Cadastro de Advogados
+![Cadastro de Advogados](docs/screenshots/06-cadastro-advogados.png)
+
+### Pauta Diária
+![Pauta Diária](docs/screenshots/07-pauta-diaria.png)
+
+### Configuração do Sistema
+![Configuração do Sistema](docs/screenshots/08-configuracao.png)
 
 ## Licença
 

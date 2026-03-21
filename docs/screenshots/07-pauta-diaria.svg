@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <style>
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+    .title { font-family: Arial, sans-serif; font-size: 20px; fill: #333; font-weight: bold; }
+    .subtitle { font-family: Arial, sans-serif; font-size: 13px; fill: #555; }
+    .field { fill: #fff; stroke: #999; stroke-width: 1; rx: 2; }
+    .btn { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+    .button { fill: #e8e8e8; stroke: #999; stroke-width: 1; rx: 3; }
+  </style>
+  <!-- Window frame -->
+  <rect width="440" height="280" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="440" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="440" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Pauta Diaria</text>
+  <circle cx="400" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="416" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="384" cy="14" r="6" fill="#f39c12"/>
+
+  <!-- Title -->
+  <text x="220" y="70" text-anchor="middle" class="title">Pauta Diaria</text>
+  <line x1="120" y1="80" x2="320" y2="80" stroke="#ccc" stroke-width="1"/>
+  <text x="220" y="105" text-anchor="middle" class="subtitle">Selecione o Periodo de Emissao</text>
+
+  <!-- Date fields -->
+  <text x="90" y="155" text-anchor="end" class="label">Data Inicial:</text>
+  <rect x="100" y="140" width="120" height="24" class="field"/>
+  <text x="112" y="157" font-family="Arial, sans-serif" font-size="11" fill="#ccc">__/__/____</text>
+
+  <text x="90" y="195" text-anchor="end" class="label">Data Final:</text>
+  <rect x="100" y="180" width="120" height="24" class="field"/>
+  <text x="112" y="197" font-family="Arial, sans-serif" font-size="11" fill="#ccc">__/__/____</text>
+
+  <!-- Emitir button -->
+  <rect x="165" y="225" width="110" height="32" class="button" fill="#d0d8e8"/>
+  <text x="220" y="246" text-anchor="middle" class="btn" font-weight="bold">Emitir</text>
+</svg>

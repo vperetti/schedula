@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="520" viewBox="0 0 540 520">
+  <style>
+    .label { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .field { fill: #fff; stroke: #999; stroke-width: 1; rx: 2; }
+    .btn { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+    .button { fill: #e8e8e8; stroke: #999; stroke-width: 1; rx: 3; }
+    .tab-active { fill: #f0f0f0; stroke: #999; stroke-width: 1; }
+    .tab-inactive { fill: #d8d8d8; stroke: #999; stroke-width: 1; }
+    .radio { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+  </style>
+  <!-- Window frame -->
+  <rect width="540" height="520" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="540" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="540" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Cadastro de Advogados</text>
+  <circle cx="500" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="516" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="484" cy="14" r="6" fill="#f39c12"/>
+
+  <!-- ID row -->
+  <text x="65" y="52" text-anchor="end" class="label">Codigo:</text>
+  <rect x="72" y="40" width="90" height="20" class="field"/>
+  <rect x="168" y="40" width="55" height="20" class="button"/>
+  <text x="195" y="53" text-anchor="middle" class="btn">Novo</text>
+  <rect x="228" y="40" width="75" height="20" class="button"/>
+  <text x="265" y="53" text-anchor="middle" class="btn">Pesquisar</text>
+
+  <!-- Nome -->
+  <text x="65" y="80" text-anchor="end" class="label">Nome:</text>
+  <rect x="72" y="68" width="325" height="20" class="field"/>
+
+  <!-- Tabs -->
+  <rect x="10" y="98" width="55" height="22" class="tab-active"/>
+  <text x="37" y="113" text-anchor="middle" class="btn" font-weight="bold">Dados</text>
+  <rect x="65" y="98" width="70" height="22" class="tab-inactive"/>
+  <text x="100" y="113" text-anchor="middle" class="btn">Endereco</text>
+  <rect x="135" y="98" width="70" height="22" class="tab-inactive"/>
+  <text x="170" y="113" text-anchor="middle" class="btn">Contatos</text>
+  <rect x="205" y="98" width="80" height="22" class="tab-inactive"/>
+  <text x="245" y="113" text-anchor="middle" class="btn">Documentos</text>
+  <rect x="285" y="98" width="80" height="22" class="tab-inactive"/>
+  <text x="325" y="113" text-anchor="middle" class="btn">Observacao</text>
+
+  <!-- Tab content -->
+  <rect x="10" y="118" width="520" height="340" fill="#f0f0f0" stroke="#999"/>
+
+  <!-- Dados tab fields -->
+  <text x="100" y="148" text-anchor="end" class="label">Estado Civil:</text>
+  <rect x="108" y="135" width="150" height="20" class="field"/>
+
+  <text x="100" y="178" text-anchor="end" class="label">Profissao:</text>
+  <rect x="108" y="165" width="200" height="20" class="field"/>
+  <text x="118" y="179" font-family="Arial, sans-serif" font-size="11" fill="#666">Advogado</text>
+
+  <text x="100" y="208" text-anchor="end" class="label">Data Nascimento:</text>
+  <rect x="108" y="195" width="100" height="20" class="field"/>
+  <text x="118" y="209" font-family="Arial, sans-serif" font-size="11" fill="#ccc">__/__/____</text>
+
+  <text x="100" y="238" text-anchor="end" class="label">Sexo:</text>
+  <circle cx="118" cy="234" r="6" fill="white" stroke="#999"/>
+  <circle cx="118" cy="234" r="3" fill="#333"/>
+  <text x="130" y="238" class="radio">Masculino</text>
+  <circle cx="208" cy="234" r="6" fill="white" stroke="#999"/>
+  <text x="220" y="238" class="radio">Feminino</text>
+
+  <text x="100" y="268" text-anchor="end" class="label">Nome da Mae:</text>
+  <rect x="108" y="255" width="300" height="20" class="field"/>
+
+  <text x="100" y="298" text-anchor="end" class="label">Nome do Pai:</text>
+  <rect x="108" y="285" width="300" height="20" class="field"/>
+
+  <text x="100" y="328" text-anchor="end" class="label">Nacionalidade:</text>
+  <rect x="108" y="315" width="200" height="20" class="field"/>
+
+  <text x="100" y="358" text-anchor="end" class="label">Naturalidade:</text>
+  <rect x="108" y="345" width="200" height="20" class="field"/>
+
+  <!-- Bottom buttons -->
+  <rect x="115" y="475" width="90" height="26" class="button" fill="#d0d8e8"/>
+  <text x="160" y="492" text-anchor="middle" class="btn">Salvar</text>
+  <rect x="210" y="475" width="90" height="26" class="button"/>
+  <text x="255" y="492" text-anchor="middle" class="btn">Cancelar</text>
+  <rect x="305" y="475" width="90" height="26" class="button"/>
+  <text x="350" y="492" text-anchor="middle" class="btn">Excluir</text>
+</svg>

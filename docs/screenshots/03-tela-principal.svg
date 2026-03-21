@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="460" viewBox="0 0 700 460">
+  <style>
+    .menu { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+    .menubar { fill: #e8e8e8; }
+    .status { font-family: Arial, sans-serif; font-size: 11px; fill: #666; }
+  </style>
+  <!-- Window frame -->
+  <rect width="700" height="460" rx="6" fill="#f5f5f5" stroke="#888" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect width="700" height="28" rx="6" fill="#4a6ea5"/>
+  <rect x="0" y="14" width="700" height="14" fill="#4a6ea5"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" fill="white">Controle de Agendamentos para Advocacia</text>
+  <circle cx="660" cy="14" r="6" fill="#e74c3c"/>
+  <circle cx="676" cy="14" r="6" fill="#27ae60"/>
+  <circle cx="644" cy="14" r="6" fill="#f39c12"/>
+  <!-- Menu bar -->
+  <rect x="0" y="28" width="700" height="24" class="menubar" stroke="#ccc" stroke-width="0.5"/>
+  <text x="15" y="44" class="menu" font-weight="bold">Arquivo</text>
+  <text x="80" y="44" class="menu" font-weight="bold">Processos</text>
+  <text x="165" y="44" class="menu" font-weight="bold">Cadastros</text>
+  <text x="250" y="44" class="menu" font-weight="bold">Parametros</text>
+  <text x="345" y="44" class="menu" font-weight="bold">Relatorios</text>
+  <text x="430" y="44" class="menu" font-weight="bold">Ajuda</text>
+  <!-- Main content area with logo -->
+  <rect x="1" y="52" width="698" height="380" fill="#f9f9f9"/>
+  <!-- Central logo -->
+  <circle cx="350" cy="220" r="65" fill="none" stroke="#CC0000" stroke-width="3" opacity="0.6"/>
+  <line x1="350" y1="220" x2="350" y2="175" stroke="#CC0000" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="350" y1="220" x2="385" y2="220" stroke="#CC0000" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Balance -->
+  <line x1="325" y1="290" x2="375" y2="290" stroke="#8B4513" stroke-width="2" opacity="0.5"/>
+  <line x1="350" y1="280" x2="350" y2="305" stroke="#8B4513" stroke-width="2" opacity="0.5"/>
+  <polygon points="315,290 335,290 325,305" fill="#8B4513" opacity="0.5"/>
+  <polygon points="365,290 385,290 375,305" fill="#8B4513" opacity="0.5"/>
+  <text x="350" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" opacity="0.5">SCHEDULA</text>
+  <!-- Status bar -->
+  <rect x="0" y="432" width="700" height="28" fill="#e8e8e8" stroke="#ccc" stroke-width="0.5"/>
+  <line x1="0" y1="432" x2="700" y2="432" stroke="#bbb"/>
+  <text x="15" y="450" class="status">Pronto</text>
+  <!-- Dropdown menu example (Processos) - semi-transparent overlay -->
+  <rect x="75" y="52" width="180" height="52" fill="white" stroke="#ccc" stroke-width="1" filter="drop-shadow(2px 2px 3px rgba(0,0,0,0.15))"/>
+  <text x="85" y="72" class="menu">Dados de Processos    Alt+P</text>
+  <line x1="75" y1="78" x2="255" y2="78" stroke="#eee"/>
+  <text x="85" y="95" class="menu">Acompanhamentos      Alt+A</text>
+</svg>
